@@ -1,8 +1,8 @@
 use bevy::prelude::*;
 use bevy::window::*;
 
-mod ui;
-use ui::UiPlugin;
+mod main_menu;
+use main_menu::MainMenuPlugin;
 
 fn main() -> AppExit {
     App::new()
@@ -15,7 +15,7 @@ fn main() -> AppExit {
             }),
             ..default()
         }),
-        UiPlugin))
+        MainMenuPlugin))
         .run()
 }
 

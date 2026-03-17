@@ -1,8 +1,8 @@
 use bevy::prelude::*;
 
-pub struct UiPlugin;
+pub struct MainMenuPlugin;
 
-impl Plugin for UiPlugin {
+impl Plugin for MainMenuPlugin {
     fn build(&self, app: &mut App) {
         app.add_systems(Startup, setup_ui)
            .add_systems(Update, button_system)
